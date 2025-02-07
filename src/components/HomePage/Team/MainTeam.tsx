@@ -5,37 +5,44 @@ const team = [
   {
     id: "matt",
     name: "MATT WALLACE",
-    imgSrc: "/team/matt.png"
+    imgSrc: "/team/matt.png",
+    href: "https://x.com/MattWallace888"
   },
   {
     id: "mario",
     name: "MARIO NAWFAL",
-    imgSrc: "/team/mario.png"
+    imgSrc: "/team/mario.png",
+    href: "https://x.com/MarioNawfal"
   },
   {
     id: "shiny",
     name: "SHINY",
-    imgSrc: "/team/shiny.png"
+    imgSrc: "/team/shiny.png",
+    href: "https://x.com/ohhshiny"
   },
   {
     id: "gmoney",
     name: "GMONEY",
-    imgSrc: "/team/gmoney.png"
+    imgSrc: "/team/gmoney.png",
+    href: "https://x.com/gmoneyNFT"
   },
   {
     id: "meltem",
     name: "MELTEM",
-    imgSrc: "/team/meltem.png"
+    imgSrc: "/team/meltem.png",
+    href: "https://x.com/Melt_Dem"
   },
   {
     id: "fungibles",
     name: "FUNGIBLES",
-    imgSrc: "/team/fungibles.png"
+    imgSrc: "/team/fungibles.png",
+    href: "https://x.com/fungibIes"
   },
   {
     id: "drew",
     name: "DREW AUSTIN",
-    imgSrc: "/team/drew-austin.png"
+    imgSrc: "/team/drew-austin.png",
+    href: "https://x.com/DrewAustin"
   }
 ];
 
@@ -49,9 +56,9 @@ export const MainTeam = () => {
       <div>
         <p className="font-vallejo text-[26px]">They include:</p>
         <ul className="list-disc pl-5 flex flex-col gap-4 mt-5 text-lg font-medium">
-          <li>Co-founders of five Coinbase listed projects</li>
+          <li>Co-founders of five Coinbase-listed projects</li>
           <li>Tradfi & VC participants at the institutional level both crypto and tech. </li>
-          <li>Prominent Industry KOLs that are household names in the space.</li>
+          <li>Prominent Industry KOLs that are household names in the crypto space.</li>
           <li>Track record of 9-figure corporate exits outside of crypto. </li>
         </ul>
       </div>

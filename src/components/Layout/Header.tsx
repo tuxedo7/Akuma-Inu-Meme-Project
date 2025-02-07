@@ -52,7 +52,7 @@ export const Header = () => {
         </div>
       </div>
       <div className=" justify-end hidden md:flex">
-        <div className="flex items-center justify-center mt-0 gap-7">
+        <div className="flex items-center justify-center mt-0 gap-5">
           {socials.map((val, index) => (
             <Link target="_blank" key={index} href={val.href}>
               <Image

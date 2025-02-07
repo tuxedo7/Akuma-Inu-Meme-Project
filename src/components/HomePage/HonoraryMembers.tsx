@@ -14,14 +14,18 @@ export const HonoraryMembers = () => {
               <span className="text-red">HONORARY</span> MEMEBERS
             </p>
             <div className="text-center md:text-left">
-              <p className="mt-10">Join the most powerful cabal in cryptoBuy 1M Akuma or a GNFT</p>
-              <p className="mt-6">Join chat: t.me/probablyzero </p>
+              <p className="mt-10">{`Join the most powerful Cabal in crypto. 
+Buy 1M Akuma or {hold?} a GNFT)…
+`}</p>
+              <Link href={"https://t.me/TheAkumanati"} className="mt-6 block">
+                Join chat: t.me/probablyzero{" "}
+              </Link>
             </div>
             <div className="flex justify-center md:justify-start md:items-start gap-6 mt-8">
-              <Link href={"#"}>
+              <Link target="_blank" href={"https://t.me/TheAkumanati"}>
                 <Image src={"/socials/Telegram.png"} width={38} height={32} alt="telegram" />
               </Link>
-              <Link href={"#"}>
+              <Link href={"https://x.com/AkumaInuPrime"} target="_blank">
                 <Image src={"/socials/x.png"} width={38} height={32} alt="telegram" />
               </Link>
             </div>

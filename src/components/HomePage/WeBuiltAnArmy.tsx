@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export const WeBuiltAnArmy = () => {
@@ -25,12 +26,10 @@ export const WeBuiltAnArmy = () => {
               connected to our skill sets.
             </p>
             <p>
-              Join us (TG icon and link) while we flip AI on its head and use it to loosen the
-              impact on jobs, not take it.
+              <Link href={"https://t.me/TheAkumanati"}>Join us</Link> while we flip AI on its head
+              and use it to loosen the impact on jobs; not take it.
             </p>
-            <p>
-              We are building a new system that pays you for being human and using your creativity.
-            </p>
+            <p>We are building a new system that pays humans for their creativity and hard work.</p>
           </div>
         </div>
       </div>

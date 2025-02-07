@@ -27,7 +27,7 @@ export const KeyPoints = () => {
               KEY <span className="text-red">POINTS</span>
             </p>
             <ul className="text-[18px] flex flex-col gap-5 font-medium pl-8 pt-7 md:pt-9 list-disc">
-              <li>Wintermute is lead market maker, DV is supporting</li>
+              <li>Wintermute is our lead market maker, DV is supporting</li>
               <li>
                 Vaults begin unlocking after qualifying CEX listing (facilitated by Wintermute and
                 with previous listing relationships) as a % of volume per day

@@ -4,46 +4,52 @@ export const contract = "xxxxx";
 export const socials = [
   {
     title: "telegram",
-    href: "#",
+    href: "https://t.me/TheAkumanati",
     img: "/icons/telegram.svg",
     name: "telegram"
   },
   {
     title: "twitter",
-    href: "#",
+    href: "https://x.com/AkumaInuPrime",
     img: "/icons/x.svg",
     name: "twitter"
   },
   {
     title: "Discord",
-    href: "#",
+    href: "https://soundcloud.com/inuakuma66",
     img: "/icons/discord.svg",
     name: "discord"
   },
+  // {
+  //   title: "Sound Cloud",
+  //   href: "https://soundcloud.com/inuakuma66",
+  //   img: "/socials/sound-cloud.svg",
+  //   name: "discord"
+  // },
   {
     title: "dexsreener",
     disabled: false,
-    href: "#",
+    href: "https://dexscreener.com/base/0x55f3b570a62a346e98d88e20a36cc41c5da69980",
     img: "/icons/dexscreener.svg"
   },
   {
-    title: "dexsreener",
+    title: "coingecko",
     disabled: false,
-    href: "#",
+    href: "https://www.coingecko.com/en/coins/akuma-inu",
     img: "/icons/coingecko.svg"
   },
   {
-    title: "dexsreener",
+    title: "coin market cap",
     disabled: false,
-    href: "#",
+    href: "https://coinmarketcap.com/currencies/akuma-inu/",
     img: "/icons/coinmarketcap.svg"
+  },
+  {
+    title: "youtube",
+    href: "https://youtube.com/@akumainutoken",
+    img: "/icons/youtube2.svg",
+    name: "youtube"
   }
-  // {
-  //   title: "instagram",
-  //   href: "#",
-  //   img: "/icons/instagram.svg",
-  //   name: "instagram"
-  // },
 
   // {
   //   title: "tiktok",

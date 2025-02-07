@@ -30,8 +30,8 @@ export const About = () => {
           </div>
           <ol className="uppercase font-vallejo hidden md:flex text-[26px]  flex-col gap-1 mt-10">
             <li className="relative">1. &nbsp;Make Defi Safe</li>
-            <li className="relative">2. &nbsp;Help Loosen the job impact on ai</li>
-            <li className="relative">3. &nbsp;get profits back to vaulters</li>
+            <li className="relative">2. &nbsp;Help offset the negative impact of AI on jobs</li>
+            <li className="relative">3. &nbsp;Redistribute profits back to vaulters</li>
           </ol>
         </div>
         <div className="flex justify-center items-center">

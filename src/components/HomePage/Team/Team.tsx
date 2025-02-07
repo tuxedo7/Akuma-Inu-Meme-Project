@@ -1,15 +1,15 @@
 import React from "react";
 import { MainTeam } from "./MainTeam";
-import { Royalty } from "./Royalty";
+// import { Royalty } from "./Royalty";
 import Image from "next/image";
 
 export const Team = () => {
   return (
-    <div className="relative mt-8 md:mt-16">
+    <div className="relative pb-24 mt-8 md:mt-16">
       <div className="container">
         <div className="relative z-10 max-w-[920px] border-t border-white mx-auto">
           <MainTeam />
-          <Royalty />
+          {/* <Royalty /> */}
         </div>
       </div>
 

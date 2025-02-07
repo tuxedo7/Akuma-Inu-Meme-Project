@@ -5,27 +5,27 @@ import React from "react";
 const redSocials = [
   {
     id: 1,
-    href: "#",
+    href: "https://youtube.com/@akumainutoken",
     imgSrc: "/socials/youtube-red.svg"
   },
   {
     id: 2,
-    href: "#",
-    imgSrc: "/socials/reddit.svg"
+    href: "https://soundcloud.com/inuakuma66",
+    imgSrc: "/socials/discord.svg"
   },
   {
     id: 3,
-    href: "#",
+    href: "https://www.tiktok.com/@baseakumainu",
     imgSrc: "/socials/tiktok.svg"
   },
   {
     id: 5,
-    href: "#",
+    href: "https://x.com/AkumaInuPrime",
     imgSrc: "/socials/x.svg"
   },
   {
     id: 6,
-    href: "#",
+    href: "https://www.instagram.com/baseakumainu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     imgSrc: "/socials/instagram.svg"
   }
 ];
@@ -40,16 +40,31 @@ export const JoinCabal = () => {
               <p className="text-[48px] md:text-[54px] lg:text-[64px] font-vallejo max-w-[355px] text-center md:text-left mx-auto md:mx-[unset] md:max-w-[489px] ">
                 Join the most <span className="text-red">powerful cabal</span>
               </p>
+              <div className=" mt-6 text-center md:text-left text-[16px] font-medium flex flex-col gap-4 leading-[1.3]">
+                <p>A pipeline of profitable products powered by popular people.</p>
+                <p>
+                  We are building a better future together, at the speed of light, with our wallets
+                  connected to our skill sets.
+                </p>
+                <p>
+                  <Link href={"https://t.me/TheAkumanati"}>Join us</Link> while we flip AI on its
+                  head and use it to loosen the impact on jobs; not take it.
+                </p>
+                <p>
+                  We are building a new system that pays humans for their creativity and hard work.
+                </p>
+              </div>
               <p className="mt-[29px] md:mt-[59px] max-w-[342px] md:max-w-[unset] text-[22px] md:text-[35px] break-all font-raleway mx-auto text-center md:text-left">
                 Join chat:{" "}
-                <Link className="text-red" href={"https://www.t.me/probablyzero"}>
-                  t.me/probablyzero
+                <Link className="text-red" href={"https://t.me/TheAkumanati"}>
+                  t.me/TheAkumanati
                 </Link>{" "}
               </p>
             </div>
+
             <div className="flex items-center justify-center">
               <Image
-                className="-mb-40 max-w-[291px] md:max-w-[475px] w-full"
+                className="-mb- max-w-[291px] md:max-w-[475px] w-full"
                 src={"/key-points/key-points.png"}
                 width={475}
                 height={720}

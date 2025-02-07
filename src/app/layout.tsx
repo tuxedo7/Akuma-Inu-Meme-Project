@@ -7,7 +7,7 @@ import "./globals.css";
 import { Raleway } from "next/font/google";
 import local from "next/font/local";
 // import { Layout } from "@/components/Layout/Layout";
-
+import { Toaster } from "react-hot-toast";
 const vallejo = local({
   display: "swap",
   src: [
@@ -46,6 +46,7 @@ export default function RootLayout({
         <link rel="icon" href="/logo.png" />
 
         {children}
+        <Toaster position="top-center" reverseOrder={false} />
       </body>
     </html>
   );

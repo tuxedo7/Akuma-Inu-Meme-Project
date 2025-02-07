@@ -18,7 +18,7 @@ export const HeroSection = () => {
         width={954}
         height={738}
         src={"/hero/m-bg-hero.png"}
-        className="absolute top-0 left-0 w-full h-full object-top  md:hidden"
+        className="absolute object-cover md:object-[unset] md:top-0 left-0 w-full h-full object-top  md:hidden"
         alt="bg image"
       />
       <div className="relative container z-10 h-full min-h-screen grid grid-rows-[auto,1fr]">
