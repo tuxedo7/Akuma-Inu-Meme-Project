@@ -14,7 +14,48 @@ export const JoinCabal = () => {
         </div>
         <div>
           <div className="flex justify-center md:justify-end">
-            <BuyWithoutFearInternal />
+            <div className="max-w-[336px]">
+              <p className="font-black font-futura text-[32px] uppercase">
+                BUY WITH HONOR
+              </p>
+              <div className="grid gap-2 uppercase grid-cols-2 items-center mt-2">
+                <Link
+                  href={
+                    "https://app.uniswap.org/explore/tokens/base0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6"
+                  }
+                  className="flex items-center justify-center bg-[#ff0328] py-3 px-4 rounded-xl text-black font-futura text-center font-bold"
+                >
+                  <span>
+                    <Image
+                      src="/logos/1.png"
+                      width={20}
+                      height={20}
+                      alt="logo"
+                      style={{ filter: "brightness(1)" }}
+                    />
+                  </span>
+                  &nbsp;AKUMA
+                </Link>
+                <Link
+                  href={
+                    "https://opensea.io/collection/probably-nothing-genesis-nft"
+                  }
+                  target="_blank"
+                  className="flex items-center justify-center bg-[#ff9003] py-3 px-4 rounded-xl text-black font-futura text-center font-bold"
+                >
+                  <span>
+                    <Image
+                      src="/logos/2.png"
+                      width={20}
+                      height={20}
+                      alt="logo"
+                      style={{ filter: "brightness(1)" }}
+                    />
+                  </span>
+                  &nbsp;GNFT
+                </Link>
+              </div>
+            </div>
           </div>
           <p className="mt-[29px] md:mt-[80px] max-w-[342px] md:max-w-[unset] text-[18px] sm:text-[22px] md:text-[35px] break-all mx-auto text-center md:text-right font-futura">
             Join chat:{" "}
@@ -24,10 +65,20 @@ export const JoinCabal = () => {
           </p>
           <div className="flex justify-center md:justify-end  gap-6 mt-6">
             <Link target="_blank" href={"https://t.me/akumainuonbase"}>
-              <Image src={"/socials/Telegram.png"} width={38} height={32} alt="telegram" />
+              <Image
+                src={"/socials/Telegram.png"}
+                width={38}
+                height={32}
+                alt="telegram"
+              />
             </Link>
             <Link href={"https://x.com/AkumaInuPrime"} target="_blank">
-              <Image src={"/icons/x.svg"} width={38} height={32} alt="telegram" />
+              <Image
+                src={"/icons/x.svg"}
+                width={38}
+                height={32}
+                alt="telegram"
+              />
             </Link>
           </div>
         </div>
