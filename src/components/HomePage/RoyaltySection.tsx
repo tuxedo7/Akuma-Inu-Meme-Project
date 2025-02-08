@@ -21,18 +21,18 @@ const royalty2 = [
     imgSrc: "/team/royalties/3.jpeg",
     href: "https://x.com/mateo_ventures?s=21"
   },
-  {
-    id: "Quigs.base.eth",
-    name: "Quigs.base.eth",
-    imgSrc: "/team/royalties/4.jpeg",
-    href: "https://x.com/quigleynft?s=21"
-  },
-  {
-    id: "RENDR | rendə(r)",
-    name: "RENDR | rendə(r)",
-    imgSrc: "/team/royalties/5.jpeg",
-    href: "https://x.com/realrendr?s=21"
-  },
+  // {
+  //   id: "Quigs.base.eth",
+  //   name: "Quigs.base.eth",
+  //   imgSrc: "/team/royalties/4.jpeg",
+  //   href: "https://x.com/quigleynft?s=21"
+  // },
+  // {
+  //   id: "RENDR | rendə(r)",
+  //   name: "RENDR | rendə(r)",
+  //   imgSrc: "/team/royalties/5.jpeg",
+  //   href: "https://x.com/realrendr?s=21"
+  // },
   {
     id: "Vitalis (cute/acc)",
     name: "Vitalis (cute/acc)",

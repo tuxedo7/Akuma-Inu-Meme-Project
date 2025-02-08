@@ -19,7 +19,7 @@ export const AkumaProducts = () => {
             AKUMA <span className="text-red">PRODUCTS</span>
           </p>
           <p className="text-[18px] md:hidden ">{topText}</p>
-          <div className="grid  place-items-center pt-[60px] md:grid-cols-2 gap-[60px] md:border-t border-white">
+          <div className="grid place-items-center pt-[60px] md:grid-cols-2 gap-[60px] md:border-t border-white">
             <div>
               <div>
                 <Image

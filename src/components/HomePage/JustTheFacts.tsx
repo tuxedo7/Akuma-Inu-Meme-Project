@@ -13,16 +13,16 @@ export const JustTheFacts = () => {
         <div className="mt-2 sm:mt-8 max-w-[790px] mx-auto text-sm sm:text-base md:text-[24px] py-2 flex flex-col gap-2 sm:gap-4">
           <p
             className={cn(
-              " py-3.5  px-6 rounded-xl flex md:block flex-col items-center justify-center",
+              " py-3.5  px-4 rounded-xl flex md:block flex-col items-center justify-center",
               bgItem
             )}
           >
             <strong>Contract Address:</strong>
-            <span className="break-all">0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6</span>
+            <span className="break-all"> 0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6</span>
           </p>
           <p
             className={cn(
-              " py-3.5  px-6 rounded-xl flex md:block flex-col items-center justify-center",
+              " py-3.5  px-4 rounded-xl flex md:block flex-col items-center justify-center",
               bgItem
             )}
           >
@@ -30,7 +30,7 @@ export const JustTheFacts = () => {
           </p>
           <p
             className={cn(
-              " py-3.5  px-6 rounded-xl flex md:block flex-col items-center justify-center",
+              " py-3.5  px-4 rounded-xl flex md:block flex-col items-center justify-center",
               bgItem
             )}
           >
@@ -38,7 +38,7 @@ export const JustTheFacts = () => {
           </p>
           <p
             className={cn(
-              " py-3.5  px-6 rounded-xl flex md:block flex-col items-center justify-center",
+              " py-3.5  px-4 rounded-xl flex md:block flex-col items-center justify-center",
               bgItem
             )}
           >
@@ -46,7 +46,7 @@ export const JustTheFacts = () => {
           </p>
           <p
             className={cn(
-              " py-3.5  px-6 rounded-xl flex md:block flex-col items-center justify-center",
+              " py-3.5  px-4 rounded-xl flex md:block flex-col items-center justify-center",
               bgItem
             )}
           >

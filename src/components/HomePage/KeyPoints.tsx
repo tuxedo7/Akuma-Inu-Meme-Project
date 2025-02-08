@@ -12,7 +12,7 @@ export const KeyPoints = () => {
             <p className="text-[60px] text-center md:text-left sm:text-[120px] md:text-[150px] font-vallejo text-red  leading-[1] font-black">
               key points
             </p>
-            <ul className="text-[18px] md:text-[24px] leading-[1.2] max-w-[496px] mx-auto md:mx-[unset] text-center md:text-left list-inside md:list-outside  flex flex-col gap-5 font-medium pl-8 pt-7 md:pt-9 list-disc">
+            <ul className="text-[18px] md:text-[24px] leading-[1.4] max-w-[496px] mx-auto md:mx-[unset] text-justify list-inside md:list-outside  flex flex-col gap-5 font-medium pl-2 sm:pl-8 pt-7 md:pt-9 list-disc">
               {/* <li>Wintermute is our lead market maker, DV is supporting</li> */}
               <li>
                 Vaults begin unlocking after qualifying CEX listing (facilitated by Wintermute and

@@ -236,7 +236,7 @@ export const SpreadTheLove = () => {
             className="w-full h-auto  md:hidden"
           /> */}
         </div>
-        <div className="my-8 py-8  rounded-xl bg-white/10 mb-2">
+        <div className="my-8 py-8 md:px-16 rounded-xl bg-white/10 mb-2">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-6 mb-4">
             <Image
               className="max-w-[43px] md:max-w-[unset]"
@@ -270,7 +270,7 @@ export const SpreadTheLove = () => {
             </div>
 
             {/* mobile */}
-            <div className="block md:hidden pl-4  mt-6 mx-auto">
+            <div className="block md:hidden px-4  mt-6 mx-auto">
               <Carousel opts={{ dragFree: true }} className="w-full ">
                 <CarouselContent className="w-full">
                   {[...tweets].splice(0, 4).map((val, index) => (
@@ -296,7 +296,7 @@ export const SpreadTheLove = () => {
                 <CarouselNext /> */}
               </Carousel>
             </div>
-            <div className="block md:hidden pl-4  mt-6 mx-auto">
+            <div className="block md:hidden px-4  mt-6 mx-auto">
               <Carousel opts={{ dragFree: true }} className="w-full ">
                 <CarouselContent className="w-full">
                   {[...tweets].splice(4, 8).map((val, index) => (

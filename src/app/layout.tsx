@@ -43,7 +43,7 @@ const raleway = Raleway({
 
 // TODO - ADD META DATA
 export const metadata: Metadata = {
-  title: "Ai meme coin",
+  title: "AKUMA INU",
   description: "A cool meme coin"
 };
 
