@@ -4,7 +4,7 @@ export const contract = "xxxxx";
 export const socials = [
   {
     title: "telegram",
-    href: "https://t.me/TheAkumanati",
+    href: "https://t.me/akumainuonbase",
     img: "/icons/telegram.svg",
     name: "telegram"
   },
@@ -17,7 +17,7 @@ export const socials = [
   {
     title: "Discord",
     href: "https://soundcloud.com/inuakuma66",
-    img: "/icons/discord.svg",
+    img: "/socials/sound-cloud.svg",
     name: "discord"
   },
   // {
@@ -70,3 +70,10 @@ export const socials = [
   //   img: "/icons/dextools.svg"
   // },
 ];
+
+export const uniswapURL =
+  "https://app.uniswap.org/explore/tokens/base/0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6";
+export const openseaURL = "https://opensea.io/collection/probably-nothing-genesis-nft";
+
+export const buyWithoutFearUrl =
+  "https://app.uniswap.org/explore/tokens/base/0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6";

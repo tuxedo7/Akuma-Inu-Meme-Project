@@ -1,39 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
-const redSocials = [
-  {
-    id: 1,
-    href: "https://youtube.com/@akumainutoken",
-    imgSrc: "/socials/youtube-red.svg"
-  },
-  {
-    id: 2,
-    href: "https://soundcloud.com/inuakuma66",
-    imgSrc: "/socials/discord.svg"
-  },
-  {
-    id: 3,
-    href: "https://www.tiktok.com/@baseakumainu",
-    imgSrc: "/socials/tiktok.svg"
-  },
-  {
-    id: 5,
-    href: "https://x.com/AkumaInuPrime",
-    imgSrc: "/socials/x.svg"
-  },
-  {
-    id: 6,
-    href: "https://www.instagram.com/baseakumainu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-    imgSrc: "/socials/instagram.svg"
-  }
-];
+import { BuyWithoutFearInternal } from "./Team/BuyWithoutFearInternal";
 
 export const JoinCabal = () => {
   return (
-    <div>
-      <div className="container relative z-20">
+    <div className="py-4 md:py-12">
+      <div className="grid md:grid-cols-[auto,1fr] gap-6 container">
+        <div className="max-w-[546px] mx-auto">
+          <p className="font-vallejo text-center md:text-left text-[60px] md:text-[85px] font-black">
+            JOIN THE MOST POWERFUL CABAL
+          </p>
+        </div>
+        <div>
+          <div className="flex justify-center md:justify-end">
+            <BuyWithoutFearInternal />
+          </div>
+          <p className="mt-[29px] md:mt-[80px] max-w-[342px] md:max-w-[unset] text-[18px] sm:text-[22px] md:text-[35px] break-all mx-auto text-center md:text-right font-futura">
+            Join chat:{" "}
+            <Link className="underline" href={"https://t.me/akumainuonbase"}>
+            t.me/akumainuonbase
+            </Link>{" "}
+          </p>
+          <div className="flex justify-center md:justify-end  gap-6 mt-6">
+            <Link target="_blank" href={"https://t.me/akumainuonbase"}>
+              <Image src={"/socials/Telegram.png"} width={38} height={32} alt="telegram" />
+            </Link>
+            <Link href={"https://x.com/AkumaInuPrime"} target="_blank">
+              <Image src={"/icons/x.svg"} width={38} height={32} alt="telegram" />
+            </Link>
+          </div>
+        </div>
+      </div>
+      {/* <div className="container relative z-20">
         <div className="max-w-[1017px] mx-auto">
           <div className="grid md:grid-cols-[1fr,auto] items-center">
             <div>
@@ -95,7 +94,7 @@ export const JoinCabal = () => {
           height={409}
           alt="bg"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

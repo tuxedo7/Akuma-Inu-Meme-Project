@@ -1,4 +1,6 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import Link from "next/link";
 // import Link from "next/link";
 import React from "react";
 
@@ -19,23 +21,67 @@ export const BuildingBounties = () => {
   return (
     <div className="py-12">
       <div className="container">
-        <p className="text-center mx-auto text-[48px] md:text-[64px] uppercase font-vallejo max-w-[325px] md:max-w-[604px]">
-          WE ARE BUILDING BOUNTIES FOR
+        <p className="text-[60px] uppercase sm:text-[120px] md:text-[150px]   mx-auto font-vallejo text-center  text-red  leading-[1] font-black">
+          WE BUILDING BOUNTIES FOR
         </p>
         <div className="max-w-[941px] mt-[30px] md:mt-[58px] mx-auto flex items-center justify-center flex-wrap gap-4">
           {data.map((val) => (
             <div
               key={val.id}
               className={cn(
-                "bg-[#151515] p-4 flex items-center justify-center rounded-lg font-vallejo text-[12px] md:text-[28px]",
-
-                "lg:w-[218px] w-[160px] md:w-[180px] px-4  h-[45px] md:h-[98px]",
-                val.isEmpty && "bg-transparent"
+                "bg-white/20 flex items-center justify-center rounded-2xl font-medium text-[24px] md:text-[32px] font-raleway",
+                "lg:w-[218px] w-[160px] md:w-[180px]   h-[64px] md:h-[74px]"
               )}
             >
               {val.text}
             </div>
           ))}
+        </div>
+        <div className="text-[24px] md:text-[32px] text-center font-bold my-8 md:my-16 flex flex-col leading-[1.2] gap-8 items-center justify-center">
+          <p>Whatever needs to be dreamt up, can be in the Akumanati.</p>
+          <p className="flex items-center justify-center gap-2">
+            Buy 1M $AKUMA:{" "}
+            <Link
+              href={
+                "https://app.uniswap.org/explore/tokens/base/0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6"
+              }
+              target="_blank"
+              className="flex items-center gap-2"
+            >
+              <span>
+                <Image
+                  style={{ filter: "brightness(1) invert(1)" }}
+                  src="/logos/1.jpeg"
+                  width={20}
+                  height={20}
+                  alt="logo"
+                />
+              </span>
+              <span className="underline">Uniswap</span>
+            </Link>{" "}
+          </p>
+          <p className="flex items-center justify-center gap-2">
+            Or Hold a Probably Nothing -{" "}
+            <Link
+              href={"https://opensea.io/collection/probably-nothing-genesis-nft"}
+              target="_blank"
+              className="flex items-center gap-2"
+            >
+              <span>
+                <Image
+                  src="/logos/2.jpeg"
+                  width={20}
+                  height={20}
+                  alt="logo"
+                  style={{ filter: "brightness(1) invert(1)" }}
+                />
+              </span>
+              <span className="underline">Genesis NFT</span>
+            </Link>{" "}
+          </p>
+          <p className="max-w-[650px] mx-auto">
+            Join the most powerful cabal in crypto and come build at light speed with us.
+          </p>
         </div>
       </div>
     </div>

@@ -49,18 +49,18 @@ export const AkumaProducts = () => {
                 />
                 <p className="text-red text-[60px] font-vallejo leading-[1]">AKUMABOT</p>
                 <p className="font-medium text-lg mt-6 md:mt-10">
-                  Will be the (taking inspiration from Bonk) first genuine AI telegram trading bot
-                  (taking inspiration from Bonk, our team includes Bonk founders). Currently, a
-                  quality telegram bot does not exist on Base; we are going to change that.Taking
-                  inspiration from Bonk (several founders of which are on our team), AkumaBot will b
-                  a unique I telegram trading bot on Base. Additionally, new memes should use this
-                  bot to build their own treasuries while benefiting ours.
+                  Will be the first genuine AI telegram trading bot (taking inspiration from Bonk,
+                  our team includes Bonk founders). Currently, a quality telegram bot does not exist
+                  on Base; we are going to change that.Taking inspiration from Bonk (several
+                  founders of which are on our team), AkumaBot will b a unique I telegram trading
+                  bot on Base. Additionally, new memes should use this bot to build their own
+                  treasuries while benefiting ours.
                 </p>
               </div>
             </div>
           </div>
 
-          <p className="p-4 mt-12 bg-black text-center max-w-[774px] mx-auto text-[18px]">
+          <p className="p-4 mt-12 bg-black text-center md:text-right max-w-[774px] mx-auto text-[18px]">
             Our road map is <strong className="uppercase">ridiculous</strong>. Follow our
             announcements channel for real-time updates.
           </p>

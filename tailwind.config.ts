@@ -12,6 +12,7 @@ export default {
       fontFamily: {
         raleway: ["var(--font-raleway)", "sans-serif"],
         vallejo: ["var(--font-vallejo)", "sans-serif"],
+        futura: ["var(--font-futura)", "sans-serif"],
         sans: ["var(--font-raleway)", "sans-serif"],
         serif: ["var(--font-raleway)", "sans-serif"],
         mono: ["var(--font-raleway)", "sans-serif"]

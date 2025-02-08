@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const Team = () => {
   return (
-    <div className="relative pb-24 mt-8 md:mt-16">
+    <div id="team" className="relative pb-24 mt-8 md:mt-16">
       <div className="container">
         <div className="relative z-10 max-w-[920px] border-t border-white mx-auto">
           <MainTeam />

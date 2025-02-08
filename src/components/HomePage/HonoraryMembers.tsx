@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { BuyWithoutFearInternal } from "./Team/BuyWithoutFearInternal";
+// import { BuyWithoutFearInternal } from "./Team/BuyWithoutFearInternal";
 
 export const HonoraryMembers = () => {
   return (
-    <div className="relative flex items-center min-h-[595px] ">
+    <div id="community" className="relative flex items-center min-h-[595px] ">
       <div className="container relative z-10 py-12">
         <div className="grid md:grid-cols-2 md:gap-10 max-w-[791px] mx-auto items-center">
           {/* left side of grid */}
@@ -14,19 +14,18 @@ export const HonoraryMembers = () => {
               <span className="text-red">HONORARY</span> MEMEBERS
             </p>
             <div className="text-center md:text-left">
-              <p className="mt-10">{`Join the most powerful Cabal in crypto. 
-Buy 1M Akuma or {hold?} a GNFT)…
-`}</p>
-              <Link href={"https://t.me/TheAkumanati"} className="mt-6 block">
+              <p className="mt-10">{`Join the most powerful cabal in crypto
+  Buy 1M Akuma or hold a Probably Nothing Genesis NFT`}</p>
+              <Link href={"https://t.me/akumainuonbase"} className="mt-6 block">
                 Join chat: t.me/probablyzero{" "}
               </Link>
             </div>
             <div className="flex justify-center md:justify-start md:items-start gap-6 mt-8">
-              <Link target="_blank" href={"https://t.me/TheAkumanati"}>
+              <Link target="_blank" href={"https://t.me/akumainuonbase"}>
                 <Image src={"/socials/Telegram.png"} width={38} height={32} alt="telegram" />
               </Link>
               <Link href={"https://x.com/AkumaInuPrime"} target="_blank">
-                <Image src={"/socials/x.png"} width={38} height={32} alt="telegram" />
+                <Image src={"/icons/x.svg"} width={38} height={32} alt="telegram" />
               </Link>
             </div>
           </div>
@@ -41,7 +40,26 @@ Buy 1M Akuma or {hold?} a GNFT)…
               alt="dog mask"
             />
             <div className="hidden md:block">
-              <BuyWithoutFearInternal />
+              <div className="max-w-[336px]">
+                <p className="font-black font-futura text-[32px] uppercase">Buy without Fear</p>
+                <div className="grid gap-2 uppercase grid-cols-2 items-center mt-2">
+                  <Link
+                    href={
+                      "https://app.uniswap.org/explore/tokens/base0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6"
+                    }
+                    className="bg-red py-3 px-4 rounded-xl text-black font-futura text-center font-bold"
+                  >
+                    AKUMA
+                  </Link>
+                  <Link
+                    href={"https://opensea.io/collection/probably-nothing-genesis-nft"}
+                    target="_blank"
+                    className="bg-red py-3 px-4 rounded-xl text-black font-futura text-center font-bold"
+                  >
+                    Probably GNFT
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

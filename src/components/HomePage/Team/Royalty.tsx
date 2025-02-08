@@ -26,6 +26,30 @@ const team1 = [
     name: "Quigs.base.eth",
     imgSrc: "/team/royalties/4.jpeg",
     href: "https://x.com/quigleynft?s=21"
+  },
+  {
+    id: "RENDR | rendə(r)",
+    name: "RENDR | rendə(r)",
+    imgSrc: "/team/royalties/5.jpeg",
+    href: "https://x.com/realrendr?s=21"
+  },
+  {
+    id: "Vitalis (cute/acc)",
+    name: "Vitalis (cute/acc)",
+    imgSrc: "/team/royalties/6.jpeg",
+    href: "https://x.com/vitaliselkins?s=21"
+  },
+  {
+    id: "Christopher Kocurek",
+    name: "Christopher Kocurek",
+    imgSrc: "/team/royalties/7.jpeg",
+    href: "https://x.com/bigironchris?s=21"
+  },
+  {
+    id: "fity.eth",
+    name: "fity.eth",
+    imgSrc: "/team/royalties/8.jpeg",
+    href: "https://x.com/fityeth?s=21"
   }
 ];
 
@@ -58,7 +82,7 @@ const team2 = [
 
 export const Royalty = () => {
   return (
-    <div>
+    <div id="team">
       <div className="text-center pt-[50px] md:pt-[100px] pb-[50px] md:pb-[100px]">
         <p className="max-w-[641px] mx-auto text-[48px] md:text-[100px] font-vallejo uppercase ">
           AKUMANATI <span className="text-red">ROYALTY</span>

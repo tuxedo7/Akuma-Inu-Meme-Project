@@ -12,7 +12,7 @@ export const Facts = () => {
     { id: 2, text: "X", href: "https://x.com/akumainuprime" },
     { id: 3, text: "PUBLIC TG", href: "https://t.me/akumainuonbase" },
     { id: 4, text: "COINGECKO", href: "https://www.coingecko.com/en/coins/akuma-inu" },
-    { id: 5, text: "AKUMANATI", href: "https://t.me/theakumanati" },
+    { id: 5, text: "AKUMANATI", href: "https://t.me/akumainuonbase" },
     { id: 6, text: "ANNOUNCEMENTS", href: "https://t.me/AkumaInuOnBase" },
     {
       id: 7,

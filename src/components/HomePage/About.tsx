@@ -3,14 +3,7 @@ import React from "react";
 
 export const About = () => {
   return (
-    <div className="relative min-h-[623px] -mt-6 pt-[130px] pb-[60px]">
-      <Image
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        width={1440}
-        height={623}
-        alt="about background"
-        src={"/about/about.png"}
-      />
+    <div className="relative min-h-[623px]  pt-[130px] pb-[60px]">
       <div className="relative z-10 grid md:grid-cols-2 gap-[30px] lg:gap-[70px] container">
         <div>
           <div className="flex flex-col gap-3 text-[18px]">
@@ -40,7 +33,7 @@ export const About = () => {
         <ol className="uppercase md:hidden list-decimal flex flex-col gap-1 font-vallejo text-[26px] max-w-[241px] mx-auto  ">
           <li>&nbsp;Make Defi Safe</li>
           <li>&nbsp;Help Loosen the job impact on ai</li>
-          <li>&nbsp;get profits back to vaulters</li>
+          <li>&nbsp;Redistribute profits back to vaulters</li>
         </ol>
       </div>
     </div>

@@ -19,6 +19,21 @@ const vallejo = local({
   variable: "--font-vallejo"
 });
 
+const futura = local({
+  display: "swap",
+  src: [
+    {
+      path: "./fonts/Futura Bold font.ttf",
+      weight: "700"
+    },
+    {
+      path: "./fonts/Futura XBlk BT.ttf",
+      weight: "900"
+    }
+  ],
+  variable: "--font-futura"
+});
+
 const raleway = Raleway({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
@@ -38,9 +53,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html className="scroll-smooth" lang="en">
       <body
-        className={`${vallejo.variable} ${raleway.variable}  ${raleway.className} font-raleway  bg-black text-white min-h-screen  antialiased  overflow-x-hidden leading-[1]`}
+        className={`${vallejo.variable} ${futura.variable} ${raleway.variable}  ${raleway.className} font-raleway  bg-[#110C0C] text-white min-h-screen  antialiased  overflow-x-hidden leading-[1] relative scroll-smooth`}
       >
         {/* // TODO NO. 3 - ADD FAVICON (favicon.png) TO PUBLIC FOLDER */}
         <link rel="icon" href="/logo.png" />
