@@ -15,7 +15,7 @@ export const BuildingBounties = () => {
     { id: 7, text: "Prediction", isEmpty: false },
     { id: 8, text: "Code", isEmpty: false },
     { id: 9, text: "Deals", isEmpty: false },
-    { id: 10, text: "Referrals", isEmpty: false }
+    { id: 10, text: "Referrals", isEmpty: false },
   ];
 
   return (
@@ -40,7 +40,7 @@ export const BuildingBounties = () => {
         <div className="text-[24px] md:text-[32px] text-center font-bold my-8 md:my-16 flex flex-col leading-[1.2] gap-8 items-center justify-center">
           <p>Whatever needs to be dreamt up, can be in the Akumanati.</p>
           <p className="flex items-center justify-center gap-2">
-            Buy 1M $AKUMA:{" "}
+            Buy{" "}
             <Link
               href={
                 "https://app.uniswap.org/explore/tokens/base/0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6"
@@ -48,39 +48,42 @@ export const BuildingBounties = () => {
               target="_blank"
               className="flex items-center gap-2"
             >
-              <span>
-                <Image
-                  style={{ filter: "brightness(1) invert(1)" }}
-                  src="/logos/1.jpeg"
-                  width={20}
-                  height={20}
-                  alt="logo"
-                />
-              </span>
-              <span className="underline">Uniswap</span>
+              <span className="underline">1,000,000 AKUMA</span>
             </Link>{" "}
+            <span>
+              <Image
+                style={{ filter: "brightness(1)" }}
+                src="/logos/1.png"
+                width={20}
+                height={20}
+                alt="logo"
+              />
+            </span>
           </p>
           <p className="flex items-center justify-center gap-2">
-            Or Hold a Probably Nothing -{" "}
+            Or Hold a{" "}
             <Link
-              href={"https://opensea.io/collection/probably-nothing-genesis-nft"}
+              href={
+                "https://opensea.io/collection/probably-nothing-genesis-nft"
+              }
               target="_blank"
               className="flex items-center gap-2"
             >
-              <span>
-                <Image
-                  src="/logos/2.jpeg"
-                  width={20}
-                  height={20}
-                  alt="logo"
-                  style={{ filter: "brightness(1) invert(1)" }}
-                />
-              </span>
-              <span className="underline">Genesis NFT</span>
+              <span className="underline">Probably Nothing Genesis NFT</span>
             </Link>{" "}
+            <span>
+              <Image
+                src="/logos/2.png"
+                width={20}
+                height={20}
+                alt="logo"
+                style={{ filter: "brightness(1)" }}
+              />
+            </span>
           </p>
           <p className="max-w-[650px] mx-auto">
-            Join the most powerful cabal in crypto and come build at light speed with us.
+            Join the most powerful cabal in crypto and come build at light speed
+            with us.
           </p>
         </div>
       </div>

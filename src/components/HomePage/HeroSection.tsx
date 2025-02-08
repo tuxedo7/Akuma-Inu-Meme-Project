@@ -68,7 +68,7 @@ export const HeroSection = () => {
               href={buyWithoutFearUrl}
               className="   mt-5 uppercase text-base md:text-[24px] py-4 px-2 md:px-2  font-futura rounded-lg font-bold tracking- [background:linear-gradient(to_bottom,#FF0E1E_50%,#47050A_173%,#47050A_100%)] text-white  w-[215px] h-[50px] md:flex items-center justify-center text-center"
             >
-              buy without fear
+              BUY WITH HONOR
             </Link>
           </div>
         </div>

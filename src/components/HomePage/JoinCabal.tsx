@@ -18,8 +18,8 @@ export const JoinCabal = () => {
           </div>
           <p className="mt-[29px] md:mt-[80px] max-w-[342px] md:max-w-[unset] text-[18px] sm:text-[22px] md:text-[35px] break-all mx-auto text-center md:text-right font-futura">
             Join chat:{" "}
-            <Link className="underline" href={"https://t.me/akumainuonbase"}>
-            t.me/akumainuonbase
+            <Link className="underline" href={"https://t.me/TheAkumanati"}>
+              t.me/TheAkumanati
             </Link>{" "}
           </p>
           <div className="flex justify-center md:justify-end  gap-6 mt-6">

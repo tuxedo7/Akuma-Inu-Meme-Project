@@ -14,7 +14,7 @@ export const BuyWithoutFearInternal = () => {
 
   return (
     <div className="max-w-[336px]">
-      <p className="font-black font-futura text-[32px] uppercase">Buy without Fear</p>
+      <p className="font-black font-futura text-[32px] uppercase">BUY WITH HONOR</p>
       <div className="grid gap-2 uppercase grid-cols-2 items-center mt-2">
         <Link
           target="_blank"
