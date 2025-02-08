@@ -14,48 +14,7 @@ export const JoinCabal = () => {
         </div>
         <div>
           <div className="flex justify-center md:justify-end">
-            <div className="max-w-[336px]">
-              <p className="font-black font-futura text-[32px] uppercase">
-                BUY WITH HONOR
-              </p>
-              <div className="grid gap-2 uppercase grid-cols-2 items-center mt-2">
-                <Link
-                  href={
-                    "https://app.uniswap.org/explore/tokens/base0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6"
-                  }
-                  className="flex items-center justify-center bg-[#ff0328] py-3 px-4 rounded-xl text-black font-futura text-center font-bold"
-                >
-                  <span>
-                    <Image
-                      src="/logos/1.png"
-                      width={20}
-                      height={20}
-                      alt="logo"
-                      style={{ filter: "brightness(1)" }}
-                    />
-                  </span>
-                  &nbsp;AKUMA
-                </Link>
-                <Link
-                  href={
-                    "https://opensea.io/collection/probably-nothing-genesis-nft"
-                  }
-                  target="_blank"
-                  className="flex items-center justify-center bg-[#ff9003] py-3 px-4 rounded-xl text-black font-futura text-center font-bold"
-                >
-                  <span>
-                    <Image
-                      src="/logos/2.png"
-                      width={20}
-                      height={20}
-                      alt="logo"
-                      style={{ filter: "brightness(1)" }}
-                    />
-                  </span>
-                  &nbsp;GNFT
-                </Link>
-              </div>
-            </div>
+            <BuyWithoutFearInternal />
           </div>
           <p className="mt-[29px] md:mt-[80px] max-w-[342px] md:max-w-[unset] text-[18px] sm:text-[22px] md:text-[35px] break-all mx-auto text-center md:text-right font-futura">
             Join chat:{" "}
