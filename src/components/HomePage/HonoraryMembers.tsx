@@ -14,7 +14,7 @@ export const HonoraryMembers = () => {
               <span className="text-red">HONORARY</span> MEMEBERS
             </p>
             <div className="text-center md:text-left">
-              <p className="mt-10">{`Join the most powerful cabal in crypto
+              <p className="mt-10 leading-[1.4]">{`Join the most powerful cabal in crypto
   Buy 1M Akuma or hold a Probably Nothing Genesis NFT`}</p>
               <Link href={"https://t.me/akumainuonbase"} className="mt-6 block">
                 Join chat: t.me/probablyzero{" "}

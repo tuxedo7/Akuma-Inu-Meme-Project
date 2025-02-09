@@ -16,7 +16,7 @@ export const WeBuiltAnArmy = () => {
               <source src="/army/army.mp4" type="video/mp4" />
             </video>
           </div>
-          <div className="text-[18px] md:text-[22px] font-medium flex flex-col gap-3 md:gap-6 leading-[1.3] text-justify order-[-1] md:order-[3] md:text-left">
+          <div className="text-[18px] md:text-[24px] font-medium flex flex-col gap-3 md:gap-6 leading-[1.3] text-justify -tracking-[.05em] order-[-1] md:order-[3] md:text-left">
             <p>A pipeline of profitable products powered by popular people.</p>
             <p>
               We are building a better future together, at the speed of light, with our wallets

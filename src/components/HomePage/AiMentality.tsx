@@ -16,24 +16,39 @@ export const AiMentality = () => {
     <div id="about" className="relative z-10 container pb-12">
       <div className="grid md:grid-cols-2 gap-2 max-w-[896px] mx-auto pb-12 items-end">
         <div className="max-w-[620px] mt-12 md:mt-0 mx-auto md:max-w-[unset] text-center md:text-left">
-          <p className="text-red  text-[60px] sm:text-[80px] font-vallejo font-black uppercase">
-            AI MEMETILITY OF THE Supercycle
-          </p>
-          <div className="flex flex-col gap-6 pt-10 md:pt-[80px] text-[18px] sm:text-[24px] leading-[1.2]">
-            <p className="text-justify font-bold">
+          <div className="flex flex-col items-left max-md:items-center">
+            <p className="text-red text-[60px] sm:text-[80px] font-vallejo font-black uppercase leading-[1.2]">
+              AI
+            </p>
+            <div className="relative w-fit text-red text-[60px] sm:text-[80px] font-vallejo font-black uppercase leading-[1.2]">
+              <p>MEMETILITY</p>
+              <Image
+                src={"/ai-mentality/blood-line.png"}
+                width={408}
+                height={516}
+                className="absolute bottom-0 left-0 max-w-[288px] sm:max-w-[436px] md:max-w-[unset]"
+                alt="ai memetality"
+              />
+            </div>
+            <p className="text-red text-[60px] sm:text-[80px] font-vallejo font-black uppercase leading-[1.2]">
+              OF THE Supercycle
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-6 pt-10 md:pt-[80px] text-[18px] sm:text-[24px] leading-[1.2]">
+            <p className="text-justify -tracking-[.05em] font-bold">
               Akuma Inu ($AKUMA) is now the fastest growing meme on Base and one
               of the top 20 memes in crypto.
             </p>
-            <p className="text-justify font-bold">
+            <p className="text-justify -tracking-[.05em] font-bold">
               The next Shiba or Doge will not just be a jpeg, it has to be
               unique and permanent contribution to crypto.
             </p>
-            <p className="text-justify font-bold">
+            <p className="text-justify -tracking-[.05em] font-bold">
               Akuma Inu is the ideal intersection in the category of top
               performing memes with the future of crypto infrastructure at its
               core. Our contribution to the future of crypto is clear.
             </p>
-            <ol className="text-left leading-[1.8] text-[14px] sm:text-[20px] list-decimal list-inside md:list-outside pl-3 sm:pl-6">
+            <ol className="text-left leading-[1.8] text-[14px] sm:text-[20px] list-decimal list-inside md:list-outside">
               <li>Make DeFi safe.</li>
               <li>Help offset the negative impact of AI on jobs</li>
               <li>Redistribute profits back to vaulters</li>

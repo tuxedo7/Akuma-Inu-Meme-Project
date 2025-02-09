@@ -10,29 +10,34 @@ export const AkumaProducts = () => {
         <p className="text-[60px] sm:text-[120px] md:text-[150px] max-w-[800px] mx-auto font-vallejo text-center text-red  leading-[1] font-black">
           Akuma Products
         </p>
-        <p className="text-[22px] sm:text-[32px] font-bold text-center text-justify py-8 leading-[1.2]">
-          Akuma Inu is not just a dog. AI stands for Akuma Inu. Our community has fully embraced a
+        <p className="text-[22px] sm:text-[32px] font-bold text-justify -tracking-[.05em] py-8 leading-[1.2]">
+          Akuma Inu is not just a dog.
+          AI stands for Akuma Inu.
+          Our community has fully embraced a
           new meta that encourages builders to build, not PVP. We are not simply another agent or
           launchpad. Akuma Inu’s contribution to crypto will be through spreading the infrastructure
           that becomes the connective tissue for launching and managing memes.
         </p>
         <div className="grid md:grid-cols-2 gap-8 md:gap-16  ">
-          <div className="flex flex-col items-center  justify-center">
+          <div className="flex flex-col items-center pt-5">
             <Image src={"/products/1.png"} width={400} height={400} alt="product" />
             <p className="py-3 text-[60px] text-center font-vallejo text-red">AKUMA VAULT</p>
-            <p className="text-center mt-4 text-[18px] sm:text-[22px] text-justify font-medium leading-[1.2]">
+            <p className="text-justify mt-4 text-[18px] sm:text-[22px] -tracking-[.05em] font-medium leading-[1.4]">
               Removes the barriers to projects achieving higher market caps, because they can focus
-              on building and growing their communities. Akuma Vault will be used by future memes to
-              manage their holders, and prevent malicious and stupid behavior.{" "}
+              on building and growing their communities.
+              <br/><br/>
+              Akuma Vault will be used by future memes to manage their holders, and prevent malicious and stupid behavior.
             </p>
           </div>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/products/2.png"} width={400} height={400} alt="product" />
             <p className="py-3 text-[60px] text-center font-vallejo text-red">AkumaBot</p>
-            <p className="text-center mt-4 text-[18px] sm:text-[22px] text-justify font-medium leading-[1.2]">
+            <p className="text-justify mt-4 text-[18px] sm:text-[22px] -tracking-[.05em] font-medium leading-[1.4]">
               Will be the first genuine AI telegram trading bot (taking inspiration from Bonk, our
-              team includes Bonk founders). There isn’t a quality base telegram bot currently, and
-              we need to change that. Additionally, new memes should use this bot to build their own
+              team includes Bonk founders). 
+              <br/><br/>
+              There isn’t a quality base telegram bot currently, and we need to change that. 
+              Additionally, new memes should use this bot to build their own
               treasuries while benefiting ours.
             </p>
           </div>
