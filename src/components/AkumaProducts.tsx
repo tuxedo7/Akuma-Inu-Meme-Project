@@ -10,7 +10,7 @@ export const AkumaProducts = () => {
         <p className="text-[60px] sm:text-[120px] md:text-[150px] max-w-[800px] mx-auto font-vallejo text-center text-red  leading-[1] font-black">
           Akuma Products
         </p>
-        <p className="text-[22px] sm:text-[32px] font-bold text-justify -tracking-[.05em] py-8 leading-[1.2]">
+        <p className="text-[22px] sm:text-[32px] font-bold text-justify -tracking-[.1em] sm:tracking-[.05em] py-8 leading-[1.2]">
           Akuma Inu is not just a dog.
           AI stands for Akuma Inu.
           Our community has fully embraced a
@@ -22,7 +22,7 @@ export const AkumaProducts = () => {
           <div className="flex flex-col items-center pt-5">
             <Image src={"/products/1.png"} width={400} height={400} alt="product" />
             <p className="py-3 text-[60px] text-center font-vallejo text-red">AKUMA VAULT</p>
-            <p className="text-justify mt-4 text-[18px] sm:text-[22px] -tracking-[.05em] font-medium leading-[1.4]">
+            <p className="text-justify mt-4 text-[18px] sm:text-[22px] -tracking-[.1em] sm:tracking-[.05em] font-medium leading-[1.4]">
               Removes the barriers to projects achieving higher market caps, because they can focus
               on building and growing their communities.
               <br/><br/>
@@ -32,7 +32,7 @@ export const AkumaProducts = () => {
           <div className="flex flex-col items-center justify-center">
             <Image src={"/products/2.png"} width={400} height={400} alt="product" />
             <p className="py-3 text-[60px] text-center font-vallejo text-red">AkumaBot</p>
-            <p className="text-justify mt-4 text-[18px] sm:text-[22px] -tracking-[.05em] font-medium leading-[1.4]">
+            <p className="text-justify mt-4 text-[18px] sm:text-[22px] -tracking-[.1em] sm:tracking-[.05em] font-medium leading-[1.4]">
               Will be the first genuine AI telegram trading bot (taking inspiration from Bonk, our
               team includes Bonk founders). 
               <br/><br/>

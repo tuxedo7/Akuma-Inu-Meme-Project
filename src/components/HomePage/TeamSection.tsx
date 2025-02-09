@@ -57,7 +57,7 @@ export const TeamSection = () => {
         <p className="text-[22px] sm:text-[32px] font-bold text-justify py-8 leading-[1.2]">
           Akuma Inu boasts one of the most accomplished teams to enter this market. They include:
         </p>
-        <ul className="list-disc flex flex-col gap-2 list-inside text-[18px] md:text-[24px] font-medium p-4 text-left md:text-justify leading-[1.4] ">
+        <ul className="list-disc flex flex-col gap-2 list-inside text-[18px] md:text-[24px] font-medium p-4 text-left -tracking-[.05em] leading-[1.4] ">
           <li>Co-founders of five Coinbase-listed projects </li>
           <li>
             Tradfi & VC participants at the institutional level of both crypto and tech industries.
