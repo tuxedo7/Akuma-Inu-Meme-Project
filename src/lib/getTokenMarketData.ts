@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const getTokenMarketData = async (symbol: string) => {
+export const getTokenMarketData = async () => {
   try {
     const response = await axios.get(
       `https://api.coingecko.com/api/v3/coins/markets`,

@@ -29,7 +29,7 @@ export const JustTheFacts = () => {
       // const supply = await getTotalSupply();
       // setTotalSupply(supply);
 
-      const data = await getTokenMarketData("AKUMA");
+      const data = await getTokenMarketData();
       setMarketData(data);
     };
 
@@ -52,7 +52,7 @@ export const JustTheFacts = () => {
             <strong>Contract Address:</strong>
             <button
               onClick={handleCopy}
-              className="break-all hover:text-orange-50"
+              className="break-all hover:text-orange-300"
             >
               &nbsp;0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6
             </button>
