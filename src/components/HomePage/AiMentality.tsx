@@ -23,10 +23,10 @@ export const AiMentality = () => {
             <div className="relative w-fit text-red text-[60px] sm:text-[80px] font-vallejo font-black uppercase leading-[1.2]">
               <p>MEMETILITY</p>
               <Image
-                src={"/ai-mentality/blood-line.png"}
+                src={"/ai-mentality/yellow-line.svg"}
                 width={408}
                 height={516}
-                className="absolute bottom-0 left-0 max-w-[288px] sm:max-w-[436px] md:max-w-[unset]"
+                className="absolute bottom-0 left-0 w-full max-w-[288px] sm:max-w-[436px] md:max-w-[unset]"
                 alt="ai memetality"
               />
             </div>
@@ -40,7 +40,7 @@ export const AiMentality = () => {
               of the top 20 memes in crypto.
             </p>
             <p className="text-justify -tracking-[.05em] font-bold">
-              The next Shiba or Doge will not just be a jpeg, it has to be
+              The next Shiba or Doge will not just be a jpeg, it has to be a
               unique and permanent contribution to crypto.
             </p>
             <p className="text-justify -tracking-[.05em] font-bold">
@@ -48,7 +48,7 @@ export const AiMentality = () => {
               performing memes with the future of crypto infrastructure at its
               core. Our contribution to the future of crypto is clear.
             </p>
-            <ol className="text-left leading-[1.8] text-[14px] sm:text-[20px] list-decimal list-inside md:list-outside">
+            <ol className="text-left leading-[1.8] text-[14px] sm:text-[20px] font-bold list-decimal list-inside md:list-outside">
               <li>Make DeFi safe.</li>
               <li>Help offset the negative impact of AI on jobs</li>
               <li>Redistribute profits back to vaulters</li>

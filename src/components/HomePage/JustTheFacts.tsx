@@ -1,9 +1,41 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import { BuyWithoutFearInternal } from "./Team/BuyWithoutFearInternal";
+// import { getTotalSupply } from "../../lib/getTotalSupply";
+import { getTokenMarketData } from "../../lib/getTokenMarketData";
+import { toast } from "react-hot-toast";
 import { cn } from "@/lib/utils";
 
+interface TokenMarketData {
+  total_supply: number;
+  current_price: number;
+  market_cap: number;
+  total_volume: number;
+}
+
 export const JustTheFacts = () => {
+  // const [totalSupply, setTotalSupply] = useState<string | null>(null);
+  const [marketData, setMarketData] = useState<TokenMarketData | null>(null);
+
   const bgItem = "bg-gradient-to-b from-[#410004] to-[#8D141C]";
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6");
+    toast.success("Copied!");
+  };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      // const supply = await getTotalSupply();
+      // setTotalSupply(supply);
+
+      const data = await getTokenMarketData("AKUMA");
+      setMarketData(data);
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className="py-6 sm:py-12 md:py-24">
       <div className="container">
@@ -18,7 +50,12 @@ export const JustTheFacts = () => {
             )}
           >
             <strong>Contract Address:</strong>
-            <span className="break-all"> 0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6</span>
+            <button
+              onClick={handleCopy}
+              className="break-all hover:text-orange-50"
+            >
+              &nbsp;0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6
+            </button>
           </p>
           <p
             className={cn(
@@ -26,7 +63,8 @@ export const JustTheFacts = () => {
               bgItem
             )}
           >
-            <strong>Total Supply:</strong> 666,666,666,666 Tokens
+            <strong>Total Supply:</strong> {marketData?.total_supply.toLocaleString("en-US") || "666,666,666,666"}{" "}
+            Tokens
           </p>
           <p
             className={cn(
@@ -34,7 +72,7 @@ export const JustTheFacts = () => {
               bgItem
             )}
           >
-            <strong>Live Price:</strong> $0.000180700
+            <strong>Live Price:</strong> {'$' + marketData?.current_price || "$0.000180700"}
           </p>
           <p
             className={cn(
@@ -42,7 +80,7 @@ export const JustTheFacts = () => {
               bgItem
             )}
           >
-            <strong>Market Cap:</strong> $118.38m
+            <strong>Market Cap:</strong> {'$' + marketData?.market_cap.toLocaleString("en-US") || "$118.38m"}
           </p>
           <p
             className={cn(
@@ -50,7 +88,7 @@ export const JustTheFacts = () => {
               bgItem
             )}
           >
-            <strong>Daily Vol:</strong> $7.05m
+            <strong>Daily Vol:</strong> {'$' + marketData?.total_volume.toLocaleString("en-US") || "$7.05m"}
           </p>
         </div>
         <div className="mt-12 flex items-center justify-center">

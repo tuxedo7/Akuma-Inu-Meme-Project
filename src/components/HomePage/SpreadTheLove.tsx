@@ -1,12 +1,17 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { X } from "lucide-react";
 // import { Tweet } from "react-tweet";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import SoundCloudPlayer from "../SoundCloudPlayer";
 
 const redSocials = [
   {
@@ -126,46 +131,54 @@ const sounds = [
   {
     id: "1",
     imgSrc: "/sounds/1.png",
-    url: "https://soundcloud.com/inuakuma66/akuma-we-told-you?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    url: "https://soundcloud.com/inuakuma66/akuma-we-told-you",
   },
   {
     id: "2",
     imgSrc: "/sounds/2.png",
-    url: "https://soundcloud.com/inuakuma66/congolese-sendor-akuma-inu?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    url: "https://soundcloud.com/inuakuma66/congolese-sendor-akuma-inu",
   },
   {
     id: "3",
     imgSrc: "/sounds/3.png",
-    url: "https://soundcloud.com/inuakuma66/sendor-akuma-inu?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    url: "https://soundcloud.com/inuakuma66/sendor-akuma-inu",
   },
   {
     id: "4",
     imgSrc: "/sounds/4.png",
-    url: "https://soundcloud.com/inuakuma66/pump-pump-the-bags?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    url: "https://soundcloud.com/inuakuma66/pump-pump-the-bags",
   },
   {
     id: "5",
     imgSrc: "/sounds/5.png",
-    url: "https://soundcloud.com/inuakuma66/opera?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    url: "https://soundcloud.com/inuakuma66/opera",
   },
   {
     id: "6",
     imgSrc: "/sounds/6.png",
-    url: "https://soundcloud.com/inuakuma66/we-told-you-duex?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    url: "https://soundcloud.com/inuakuma66/we-told-you-duex",
   },
   {
     id: "7",
     imgSrc: "/sounds/7.png",
-    url: "https://soundcloud.com/inuakuma66/sets/akuma-inu-soundtrack?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    url: "https://soundcloud.com/inuakuma66/sets/akuma-inu-soundtrack",
   },
   {
     id: "8",
     imgSrc: "/sounds/8.png",
-    url: "https://soundcloud.com/inuakuma66/akuma-inu-on-base-akuma-inu-on?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    url: "https://soundcloud.com/inuakuma66/akuma-inu-on-base-akuma-inu-on",
   },
 ];
 
 export const SpreadTheLove = () => {
+  // State to store the URL of the selected track
+  const [currentTrack, setCurrentTrack] = useState<string | null>(null);
+
+  // Handle click event on images
+  const handleImageClick = (url: string) => {
+    setCurrentTrack(url); // Set the SoundCloud URL for the clicked image
+  };
+
   return (
     <div>
       <div className="container py-12 px-6 bg-[#3B0304]">
@@ -416,20 +429,22 @@ export const SpreadTheLove = () => {
             {/* desktop */}
             <div className="hidden md:flex items-center justify-center flex-wrap gap-4">
               {sounds.map((val) => (
-                <Link
+                // <Link
+                //   key={val.id}
+                //   className="block w-[190px] h-[190px]"
+                //   href={val.url}
+                //   target="_blank"
+                // >
+                <Image
+                  src={val.imgSrc}
                   key={val.id}
-                  className="block w-[190px] h-[190px]"
-                  href={val.url}
-                  target="_blank"
-                >
-                  <Image
-                    src={val.imgSrc}
-                    width={400}
-                    height={400}
-                    alt="img src"
-                    className="!w-[190px] !h-[190px] object-cover rounded-xl"
-                  />
-                </Link>
+                  onClick={() => handleImageClick(val.url)}
+                  width={400}
+                  height={400}
+                  alt="img src"
+                  className="!w-[190px] !h-[190px] object-cover rounded-xl cursor-pointer"
+                />
+                // </Link>
               ))}
             </div>
 
@@ -439,20 +454,22 @@ export const SpreadTheLove = () => {
                 <CarouselContent className="w-full">
                   {[...sounds].splice(0, 4).map((val, index) => (
                     <CarouselItem className="basis-[unset]" key={index}>
-                      <Link
+                      {/* <Link
                         key={val.id}
                         className="block w-[190px] h-[190px]"
                         href={val.url}
                         target="_blank"
-                      >
-                        <Image
-                          src={val.imgSrc}
-                          width={400}
-                          height={400}
-                          alt="img src"
-                          className="!w-[190px] !h-[190px] object-cover rounded-xl"
-                        />
-                      </Link>
+                      > */}
+                      <Image
+                        src={val.imgSrc}
+                        key={val.id}
+                        onClick={() => handleImageClick(val.url)}
+                        width={400}
+                        height={400}
+                        alt="img src"
+                        className="!w-[190px] !h-[190px] object-cover rounded-xl cursor-pointer"
+                      />
+                      {/* </Link> */}
                     </CarouselItem>
                   ))}
                 </CarouselContent>
@@ -465,20 +482,22 @@ export const SpreadTheLove = () => {
                 <CarouselContent className="w-full">
                   {[...sounds].splice(4, 8).map((val, index) => (
                     <CarouselItem className="basis-[unset]" key={index}>
-                      <Link
+                      {/* <Link
                         key={val.id}
                         className="block w-[190px] h-[190px]"
                         href={val.url}
                         target="_blank"
-                      >
-                        <Image
-                          src={val.imgSrc}
-                          width={400}
-                          height={400}
-                          alt="img src"
-                          className="!w-[190px] !h-[190px] object-cover rounded-xl"
-                        />
-                      </Link>
+                      > */}
+                      <Image
+                        src={val.imgSrc}
+                        key={val.id}
+                        onClick={() => handleImageClick(val.url)}
+                        width={400}
+                        height={400}
+                        alt="img src"
+                        className="!w-[190px] !h-[190px] object-cover rounded-xl cursor-pointer"
+                      />
+                      {/* </Link> */}
                     </CarouselItem>
                   ))}
                 </CarouselContent>
@@ -486,6 +505,24 @@ export const SpreadTheLove = () => {
                 <CarouselNext /> */}
               </Carousel>
             </div>
+            {currentTrack && (
+              <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <motion.div
+                  initial={{ opacity: 0, y: -50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -50 }}
+                  className="bg-white p-2 rounded-2xl shadow-xl max-w-md w-full"
+                >
+                  <div className="flex justify-between items-center mb-4">
+                    <h2 className="text-xl font-semibold">Modal Title</h2>
+                    <button onClick={() => setCurrentTrack(null)}>
+                      <X className="w-6 h-6 text-gray-600 hover:text-black" />
+                    </button>
+                  </div>
+                  {currentTrack && <SoundCloudPlayer url={currentTrack} />}
+                </motion.div>
+              </div>
+            )}
           </div>
         </div>
       </div>

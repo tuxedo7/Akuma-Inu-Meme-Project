@@ -26,7 +26,7 @@ export const HeroSection = () => {
         <div className="container">
           <Header />
         </div>
-        <div className="mt-8 max-w-[1024px] mx-auto max-md:overflow-hidden">
+        <div className="relative mt-8 max-w-[1024px] mx-auto max-md:overflow-hidden">
           <Image
             className="scale-[1.8] origin-top !min-w-[unset] !w-full hidden md:block"
             src={"/hero/hero.png"}
@@ -48,6 +48,13 @@ export const HeroSection = () => {
             height={304}
             alt="hero"
           />
+          <Image
+            className="absolute bottom-[120] right-[20] w-[100px] sm:w-[150px] md:hidden "
+            src={"/hero/greed.png"}
+            width={100}
+            height={50}
+            alt="greed"
+          />
           <div className="relative z-10 flex flex-col items-center justify-center mt-40 sm:mt-[-200px] md:hidden">
             <div className=" justify-end  flex">
               <div className="flex items-center justify-center mt-0 gap-1 md:gap-3">
@@ -66,7 +73,7 @@ export const HeroSection = () => {
             </div>
             <Link
               href={buyWithoutFearUrl}
-              className="   mt-5 uppercase text-base md:text-[24px] py-4 px-2 md:px-2  font-futura rounded-lg font-bold tracking- [background:linear-gradient(to_bottom,#FF0E1E_50%,#47050A_173%,#47050A_100%)] text-white  w-[215px] h-[50px] md:flex items-center justify-center text-center"
+              className="mt-5 uppercase text-base md:text-[24px] py-4 px-2 md:px-2  font-futura rounded-lg font-bold tracking- [background:linear-gradient(to_bottom,#FF0E1E_50%,#47050A_173%,#47050A_100%)] text-white  w-[215px] h-[50px] md:flex items-center justify-center text-center"
             >
               BUY WITHOUT FEAR
             </Link>

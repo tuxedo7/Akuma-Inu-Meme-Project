@@ -58,12 +58,10 @@ export const TeamSection = () => {
           Akuma Inu boasts one of the most accomplished teams to enter this market. They include:
         </p>
         <ul className="list-disc flex flex-col gap-2 list-inside text-[18px] md:text-[24px] font-medium p-4 text-left -tracking-[.05em] leading-[1.4] ">
-          <li>Co-founders of five Coinbase-listed projects </li>
-          <li>
-            Tradfi & VC participants at the institutional level of both crypto and tech industries.
-          </li>
+          <li>Co-founders of five Coinbase-listed projects</li>
+          <li>Tradfi & VC participants at the institutional level of both crypto and tech industries.</li>
           <li>Prominent Industry KOLs that are household names in the crypto space.</li>
-          <li>Track record of 9-figure corporate exits outside of crypto. </li>
+          <li>Track record of 9-figure corporate exits outside of crypto.</li>
         </ul>
       </div>
       <div className=" mt-12 md:mt-24 container ">
