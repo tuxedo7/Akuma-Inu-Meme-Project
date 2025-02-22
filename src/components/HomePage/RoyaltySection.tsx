@@ -87,7 +87,7 @@ const royalty1 = [
   {
     id: "fungibles",
     name: "FUNGIBLES",
-    imgSrc: "/team/fungibles.png",
+    imgSrc: "/team/fungibles.jpg",
     href: "https://x.com/fungibIes"
   },
   {
