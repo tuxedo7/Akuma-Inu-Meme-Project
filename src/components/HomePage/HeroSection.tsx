@@ -49,7 +49,7 @@ export const HeroSection = () => {
             alt="hero"
           />
           <Image
-            className="absolute bottom-[120] right-[20] w-[100px] sm:w-[150px] md:hidden "
+            className="absolute bottom-[120px] xs:bottom-[100px] right-[20px] w-[100px] xxs:w-[120px] xs:w-[160px] md:hidden"
             src={"/hero/greed.png"}
             width={100}
             height={50}

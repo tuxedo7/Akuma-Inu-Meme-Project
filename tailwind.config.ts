@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'xxs': '420px',
+        'xs': '560px',
+      },
       fontFamily: {
         raleway: ["var(--font-raleway)", "sans-serif"],
         vallejo: ["var(--font-vallejo)", "sans-serif"],
