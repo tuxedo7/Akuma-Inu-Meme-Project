@@ -26,7 +26,7 @@ export const HeroSection = () => {
         <div className="container">
           <Header />
         </div>
-        <div className="relative mt-8 max-w-[1024px] mx-auto max-md:overflow-hidden">
+        <div className="relative mt-8  max-w-[1024px] mx-auto max-md:overflow-hidden">
           <Image
             className="scale-[1.8] origin-top !min-w-[unset] !w-full hidden md:block"
             src={"/hero/hero.png"}
@@ -49,13 +49,13 @@ export const HeroSection = () => {
             alt="hero"
           />
           <Image
-            className="absolute bottom-[120px] xs:bottom-[100px] right-[20px] w-[100px] xxs:w-[120px] xs:w-[160px] md:hidden"
+            className="absolute bottom-[140px] xs:bottom-[160px] sm:bottom-[240px] right-[20px] w-[120px] xxs:w-[140px] xs:w-[160px] sm:w-[180px] md:hidden"
             src={"/hero/greed.png"}
             width={100}
             height={50}
             alt="greed"
           />
-          <div className="relative z-10 flex flex-col items-center justify-center mt-40 sm:mt-[-200px] md:hidden">
+          <div className="relative z-10 flex flex-col items-center justify-center mt-[180px] xxs:mt-[200px] xs:mt-[220px] sm:mt-[-160px] xs:mb-5 sm:mb-20 md:hidden">
             <div className=" justify-end  flex">
               <div className="flex items-center justify-center mt-0 gap-1 md:gap-3">
                 {socials.map((val, index) => (
