@@ -11,34 +11,50 @@ export const AkumaProducts = () => {
           Akuma Products
         </p>
         <p className="text-[22px] sm:text-[32px] font-bold text-justify -tracking-[.1em] sm:tracking-[.05em] py-8 leading-[1.2]">
-          Akuma Inu is not just a dog.
-          AI stands for Akuma Inu.
-          Our community has fully embraced a
-          new meta that encourages builders to build, not PVP. We are not simply another agent or
-          launchpad. Akuma Inu’s contribution to crypto will be through spreading the infrastructure
+          Akuma Inu is not just a dog. AI stands for Akuma Inu. Our community
+          has fully embraced a new meta that encourages builders to build, not
+          PVP. We are not simply another agent or launchpad. Akuma Inu’s
+          contribution to crypto will be through spreading the infrastructure
           that becomes the connective tissue for launching and managing memes.
         </p>
         <div className="grid md:grid-cols-2 gap-8 md:gap-16  ">
           <div className="flex flex-col items-center pt-5">
-            <Image src={"/products/1.png"} width={400} height={400} alt="product" />
-            <p className="py-3 text-[60px] text-center font-vallejo text-red">AKUMA VAULT</p>
+            <Image
+              src={"/products/1.png"}
+              width={400}
+              height={400}
+              alt="product"
+            />
+            <p className="py-3 text-[60px] text-center font-vallejo text-red">
+              AKUMA VAULT
+            </p>
             <p className="text-justify mt-4 text-[18px] sm:text-[22px] -tracking-[.1em] sm:tracking-[.05em] font-medium leading-[1.4]">
-              Removes the barriers to projects achieving higher market caps, because they can focus
-              on building and growing their communities.
-              <br/><br/>
-              Akuma Vault will be used by future memes to manage their holders, and prevent malicious and stupid behavior.
+              Removes the barriers to projects achieving higher market caps,
+              because they can focus on building and growing their communities.
+              <br />
+              <br />
+              Akuma Vault will be used by future memes to manage their holders,
+              and prevent malicious and stupid behavior.
             </p>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <Image src={"/products/2.png"} width={400} height={400} alt="product" />
-            <p className="py-3 text-[60px] text-center font-vallejo text-red">AkumaBot</p>
+            <Image
+              src={"/products/2.png"}
+              width={400}
+              height={400}
+              alt="product"
+            />
+            <p className="py-3 text-[60px] text-center font-vallejo text-red">
+              AkumaBot
+            </p>
             <p className="text-justify mt-4 text-[18px] sm:text-[22px] -tracking-[.1em] sm:tracking-[.05em] font-medium leading-[1.4]">
-              Will be the first genuine AI telegram trading bot (taking inspiration from Bonk, our
-              team includes Bonk founders). 
-              <br/><br/>
-              There isn’t a quality base telegram bot currently, and we need to change that. 
-              Additionally, new memes should use this bot to build their own
-              treasuries while benefiting ours.
+              Will be the first genuine AI telegram trading bot (taking
+              inspiration from Bonk, our team includes Bonk founders).
+              <br />
+              <br />
+              There isn’t a quality base telegram bot currently, and we need to
+              change that. Additionally, new memes should use this bot to build
+              their own treasuries while benefiting ours.
             </p>
           </div>
         </div>
@@ -47,14 +63,26 @@ export const AkumaProducts = () => {
             <BuyWithoutFearInternal />
           </div>
           <div className="text-center md:text-right text-[18px] sm:text-[22px] font-medium leading-[1.2]">
-            Our road map is <strong className="uppercase">ridiculous</strong>. Follow our
-            announcements channel for real-time updates.
+            Our road map is <strong className="uppercase">ridiculous</strong>.
+            Follow our announcements channel for real-time updates.
             <div className="flex justify-center md:justify-end  gap-6 mt-4">
               <Link target="_blank" href={"https://t.me/akumainuonbase"}>
-                <Image src={"/socials/Telegram.png"} width={38} height={32} alt="telegram" />
+                <Image
+                  src={"/socials/Telegram.png"}
+                  width={38}
+                  height={32}
+                  alt="telegram"
+                  className="transaction-all duration-300 hover:scale-[1.2] focus:scale-[1.2]"
+                />
               </Link>
               <Link href={"https://x.com/AkumaInuPrime"} target="_blank">
-                <Image src={"/icons/x.svg"} width={38} height={32} alt="telegram" />
+                <Image
+                  src={"/icons/x.svg"}
+                  width={38}
+                  height={32}
+                  alt="telegram"
+                  className="transaction-all duration-300 hover:scale-[1.2] focus:scale-[1.2]"
+                />
               </Link>
             </div>
           </div>

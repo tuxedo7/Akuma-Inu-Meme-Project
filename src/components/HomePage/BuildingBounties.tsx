@@ -46,7 +46,7 @@ export const BuildingBounties = () => {
                 "https://app.uniswap.org/explore/tokens/base/0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6"
               }
               target="_blank"
-              className="flex items-center"
+              className="flex items-center transaction-all duration-300 hover:text-red focus:text-red"
             >
               <span className="underline">1,000,000 AKUMA</span>
             </Link>&nbsp;
@@ -67,7 +67,7 @@ export const BuildingBounties = () => {
                 "https://opensea.io/collection/probably-nothing-genesis-nft"
               }
               target="_blank"
-              className="flex items-center"
+              className="flex items-center transaction-all duration-300 hover:text-red focus:text-red"
             >
               <span className="underline">Probably Nothing Genesis NFT</span>
             </Link>&nbsp;

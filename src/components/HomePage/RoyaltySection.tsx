@@ -7,19 +7,19 @@ const royalty2 = [
     id: "bored",
     name: "BORED",
     imgSrc: "/team/royalties/1.jpeg",
-    href: "https://x.com/boredelonmusk?s=21"
+    href: "https://x.com/boredelonmusk?s=21",
   },
   {
     id: "hunter orrell🔥",
     name: "hunter orrell🔥",
     imgSrc: "/team/royalties/2.jpeg",
-    href: "https://x.com/hunterorrell?s=21"
+    href: "https://x.com/hunterorrell?s=21",
   },
   {
     id: "mattwright.eth | d/acc",
     name: "mattwright.eth | d/acc",
     imgSrc: "/team/royalties/3.jpeg",
-    href: "https://x.com/mateo_ventures?s=21"
+    href: "https://x.com/mateo_ventures?s=21",
   },
   // {
   //   id: "Quigs.base.eth",
@@ -37,20 +37,20 @@ const royalty2 = [
     id: "Vitalis (cute/acc)",
     name: "Vitalis (cute/acc)",
     imgSrc: "/team/royalties/6.jpeg",
-    href: "https://x.com/vitaliselkins?s=21"
+    href: "https://x.com/vitaliselkins?s=21",
   },
   {
     id: "Christopher Kocurek",
     name: "Christopher Kocurek",
     imgSrc: "/team/royalties/7.jpeg",
-    href: "https://x.com/bigironchris?s=21"
+    href: "https://x.com/bigironchris?s=21",
   },
   {
     id: "fity.eth",
     name: "fity.eth",
     imgSrc: "/team/royalties/8.jpeg",
-    href: "https://x.com/fityeth?s=21"
-  }
+    href: "https://x.com/fityeth?s=21",
+  },
 ];
 
 const royalty1 = [
@@ -58,44 +58,44 @@ const royalty1 = [
     id: "matt",
     name: "MATT WALLACE",
     imgSrc: "/team/matt.png",
-    href: "https://x.com/MattWallace888"
+    href: "https://x.com/MattWallace888",
   },
   {
     id: "mario",
     name: "MARIO NAWFAL",
     imgSrc: "/team/mario.png",
-    href: "https://x.com/MarioNawfal"
+    href: "https://x.com/MarioNawfal",
   },
   {
     id: "shiny",
     name: "SHINY",
     imgSrc: "/team/shiny.png",
-    href: "https://x.com/ohhshiny"
+    href: "https://x.com/ohhshiny",
   },
   {
     id: "gmoney",
     name: "GMONEY",
     imgSrc: "/team/gmoney.png",
-    href: "https://x.com/gmoneyNFT"
+    href: "https://x.com/gmoneyNFT",
   },
   {
     id: "meltem",
     name: "MELTEM",
     imgSrc: "/team/meltem.png",
-    href: "https://x.com/Melt_Dem"
+    href: "https://x.com/Melt_Dem",
   },
   {
     id: "fungibles",
     name: "FUNGIBLES",
     imgSrc: "/team/fungibles.jpg",
-    href: "https://x.com/fungibIes"
+    href: "https://x.com/fungibIes",
   },
   {
     id: "drew",
     name: "DREW AUSTIN",
     imgSrc: "/team/drew-austin.png",
-    href: "https://x.com/DrewAustin"
-  }
+    href: "https://x.com/DrewAustin",
+  },
 ];
 
 export const RoyaltySection = () => {
@@ -112,14 +112,18 @@ export const RoyaltySection = () => {
                 src={val.imgSrc}
                 width={200}
                 height={200}
-                className="rounded-full max-w-[132px] sm:max-w-[200px]"
+                className="rounded-full max-w-[132px] sm:max-w-[200px] transaction-all duration-300 hover:scale-[1.2] focus:scale-[1.2] md:hover:scale-[1.1] md:focus:scale-[1.1]"
                 alt={val.name}
               />
               <p className="text-center mt-3 font-bold font-futura text-base sm:text-[24px] ">
                 {val.name}
               </p>
               <div className="flex items-center justify-center mt-0 md:mt-3">
-                <Link target="_blank" href={val.href}>
+                <Link
+                  target="_blank"
+                  href={val.href}
+                  className="transaction-all duration-300 hover:scale-[1.2] focus:scale-[1.2]"
+                >
                   <svg
                     width="48"
                     height="48"

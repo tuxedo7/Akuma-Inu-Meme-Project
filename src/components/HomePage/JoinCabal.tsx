@@ -22,7 +22,7 @@ export const JoinCabal = () => {
                   href={
                     "https://app.uniswap.org/explore/tokens/base0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6"
                   }
-                  className="flex items-center justify-center bg-[#ff0328] py-3 px-4 rounded-xl text-black font-futura text-center font-bold"
+                  className="flex items-center justify-center bg-[#ff0328] py-3 px-4 rounded-xl text-black font-futura text-center font-bold transaction-all duration-300 hover:scale-105 focus:scale-105"
                 >
                   <span>
                     <Image
@@ -40,7 +40,7 @@ export const JoinCabal = () => {
                     "https://opensea.io/collection/probably-nothing-genesis-nft"
                   }
                   target="_blank"
-                  className="flex items-center justify-center bg-[#ff9003] py-3 px-4 rounded-xl text-black font-futura text-center font-bold"
+                  className="flex items-center justify-center bg-[#ff9003] py-3 px-4 rounded-xl text-black font-futura text-center font-bold transaction-all duration-300 hover:scale-105 focus:scale-105"
                 >
                   <span>
                     <Image
@@ -58,7 +58,7 @@ export const JoinCabal = () => {
           </div>
           <p className="mt-[29px] md:mt-[80px] max-w-[342px] md:max-w-[unset] text-[18px] sm:text-[22px] md:text-[35px] break-all mx-auto text-center md:text-right font-futura">
             Join chat:{" "}
-            <Link className="underline" href={"https://t.me/TheAkumanati"}>
+            <Link className="underline transaction-all duration-300 hover:text-red focus:text-red" href={"https://t.me/TheAkumanati"}>
               t.me/TheAkumanati
             </Link>{" "}
           </p>
@@ -69,6 +69,7 @@ export const JoinCabal = () => {
                 width={38}
                 height={32}
                 alt="telegram"
+                className="transaction-all duration-300 hover:scale-[1.2] focus:scale-[1.2]"
               />
             </Link>
             <Link href={"https://x.com/AkumaInuPrime"} target="_blank">
@@ -77,6 +78,7 @@ export const JoinCabal = () => {
                 width={38}
                 height={32}
                 alt="telegram"
+                className="transaction-all duration-300 hover:scale-[1.2] focus:scale-[1.2]"
               />
             </Link>
           </div>

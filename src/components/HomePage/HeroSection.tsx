@@ -49,15 +49,15 @@ export const HeroSection = () => {
             alt="hero"
           />
           <Image
-            className="absolute bottom-[140px] xs:bottom-[160px] sm:bottom-[240px] right-[20px] w-[120px] xxs:w-[140px] xs:w-[160px] sm:w-[180px] md:hidden"
+            className="absolute bottom-[150px] xs:bottom-[160px] sm:bottom-[240px] right-[20px] w-[120px] xxs:w-[140px] xs:w-[160px] sm:w-[180px] md:hidden"
             src={"/hero/greed.png"}
             width={100}
             height={50}
             alt="greed"
           />
-          <div className="relative z-10 flex flex-col items-center justify-center mt-[180px] xxs:mt-[200px] xs:mt-[220px] sm:mt-[-160px] xs:mb-5 sm:mb-20 md:hidden">
+          <div className="relative z-10 flex flex-col items-center justify-center mt-[180px] xxs:mt-[200px] xs:mt-[220px] sm:mt-[-160px] mb-1 xs:mb-5 sm:mb-20 md:hidden">
             <div className=" justify-end  flex">
-              <div className="flex items-center justify-center mt-0 gap-1 md:gap-3">
+              <div className="flex items-center justify-center mt-0 gap-2 md:gap-3">
                 {socials.map((val, index) => (
                   <Link target="_blank" key={index} href={val.href}>
                     <Image
@@ -65,7 +65,7 @@ export const HeroSection = () => {
                       width={20}
                       height={20}
                       alt={val.title}
-                      className="w-full h-auto max-w-[21px]"
+                      className="w-full h-auto max-w-[21px] transition-all duration-300 hover:scale-[1.4] focus:scale-[1.4]"
                     />
                   </Link>
                 ))}
@@ -73,7 +73,7 @@ export const HeroSection = () => {
             </div>
             <Link
               href={buyWithoutFearUrl}
-              className="mt-5 uppercase text-base md:text-[24px] py-4 px-2 md:px-2  font-futura rounded-lg font-bold tracking- [background:linear-gradient(to_bottom,#FF0E1E_50%,#47050A_173%,#47050A_100%)] text-white  w-[215px] h-[50px] md:flex items-center justify-center text-center"
+              className="mt-5 uppercase text-base md:text-[24px] py-4 px-2 md:px-2  font-futura rounded-lg font-bold tracking- [background:linear-gradient(to_bottom,#FF0E1E_50%,#47050A_173%,#47050A_100%)] text-white transition-all duration-300 hover:scale-105 focus:scale-105 w-[215px] h-[50px] md:flex items-center justify-center text-center"
             >
               BUY WITHOUT FEAR
             </Link>
