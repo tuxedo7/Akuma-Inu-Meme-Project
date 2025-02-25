@@ -192,6 +192,7 @@ export const SpreadTheLove = () => {
                 width={36}
                 height={35}
                 alt={val?.imgSrc}
+                className="transaction-all duration-300 hover:scale-[1.2] focus:scale-[1.2]"
               />
             </Link>
           ))}
@@ -209,7 +210,7 @@ export const SpreadTheLove = () => {
             <Link
               target="_blank"
               href={"https://www.tiktok.com/@baseakumainu"}
-              className="hover:text-red"
+              className="transaction-all duration-300 hover:text-red focus:text-red"
             >
               <p className="text-[24px] md:text-[32px] font-bold">
                 @baseakumainu
@@ -306,7 +307,7 @@ export const SpreadTheLove = () => {
             <Link
               target="_blank"
               href={"https://x.com/AkumaInuPrime"}
-              className="hover:text-red"
+              className="transaction-all duration-300 hover:text-red focus:text-red"
             >
               <p className="text-[24px] md:text-[32px] font-bold">
                 @akumainuprime
@@ -417,7 +418,7 @@ export const SpreadTheLove = () => {
             <Link
               target="_blank"
               href={"https://soundcloud.com/inuakuma66"}
-              className="hover:text-red"
+              className="transaction-all duration-300 hover:text-red focus:text-red"
             >
               <p className="text-[24px] md:text-[32px] font-bold">
                 @inuakuma66

@@ -72,7 +72,7 @@ export const AiMentality = () => {
             <p>CA:&nbsp;</p>
             <button
               onClick={handleCopy}
-              className="bg-white/20 p-3 break-all rounded-xl flex justify-center items-center gap-2"
+              className="bg-white/20 p-3 break-all rounded-xl flex justify-center items-center gap-2 transaction-all duration-300 hover:text-orange-300 focus:text-orange-300"
             >
               0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6{" "}
               <span>
@@ -88,6 +88,7 @@ export const AiMentality = () => {
                 width={38}
                 height={32}
                 alt="telegram"
+                className="transaction-all duration-300 hover:scale-[1.2] focus:scale-[1.2]"
               />
             </Link>
             <Link href={"https://x.com/AkumaInuPrime"} target="_blank">
@@ -96,6 +97,7 @@ export const AiMentality = () => {
                 width={38}
                 height={32}
                 alt="telegram"
+                className="transaction-all duration-300 hover:scale-[1.2] focus:scale-[1.2]"
               />
             </Link>
           </div>

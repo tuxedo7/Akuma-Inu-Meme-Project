@@ -45,7 +45,7 @@ export const Header = () => {
                       width={20}
                       height={20}
                       alt={val.title}
-                      className="w-full h-auto max-w-[21px]"
+                      className="w-full h-auto max-w-[21px] transition-all duration-300 hover:scale-[1.4] focus:scale-[1.4]"
                     />
                   </Link>
                 ))}
@@ -53,7 +53,7 @@ export const Header = () => {
             </div>
             <Link
               href={buyWithoutFearUrl}
-              className="hidden  mt-5 uppercase text-base md:text-[24px] py-4 px-2 md:px-2  font-futura rounded-lg font-bold tracking- [background:linear-gradient(to_bottom,#FF0E1E_50%,#47050A_173%,#47050A_100%)] text-white  w-[215px] h-[50px] md:flex items-center justify-center text-center"
+              className="hidden mt-5 uppercase text-base md:text-[24px] py-4 px-2 md:px-2  font-futura rounded-lg font-bold tracking- [background:linear-gradient(to_bottom,#FF0E1E_50%,#47050A_173%,#47050A_100%)] text-white transition-all duration-300 hover:scale-105 focus:scale-105 w-[215px] h-[50px] md:flex items-center justify-center text-center"
             >
               BUY WITHOUT FEAR
             </Link>

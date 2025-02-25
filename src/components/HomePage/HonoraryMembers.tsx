@@ -21,11 +21,29 @@ export const HonoraryMembers = () => {
               </Link>
             </div>
             <div className="flex justify-center md:justify-start md:items-start gap-6 mt-8">
-              <Link target="_blank" href={"https://t.me/akumainuonbase"}>
-                <Image src={"/socials/Telegram.png"} width={38} height={32} alt="telegram" />
+              <Link
+                target="_blank"
+                href={"https://t.me/akumainuonbase"}
+                className="transaction-all duration-300 hover:scale-[1.2] focus:scale-[1.2]"
+              >
+                <Image
+                  src={"/socials/Telegram.png"}
+                  width={38}
+                  height={32}
+                  alt="telegram"
+                />
               </Link>
-              <Link href={"https://x.com/AkumaInuPrime"} target="_blank">
-                <Image src={"/icons/x.svg"} width={38} height={32} alt="telegram" />
+              <Link
+                href={"https://x.com/AkumaInuPrime"}
+                target="_blank"
+                className="transaction-all duration-300 hover:scale-[1.2] focus:scale-[1.2]"
+              >
+                <Image
+                  src={"/icons/x.svg"}
+                  width={38}
+                  height={32}
+                  alt="telegram"
+                />
               </Link>
             </div>
           </div>
@@ -41,20 +59,24 @@ export const HonoraryMembers = () => {
             />
             <div className="hidden md:block">
               <div className="max-w-[336px]">
-                <p className="font-black font-futura text-[32px] uppercase">BUY WITH HONOR</p>
+                <p className="font-black font-futura text-[32px] uppercase">
+                  BUY WITH HONOR
+                </p>
                 <div className="grid gap-2 uppercase grid-cols-2 items-center mt-2">
                   <Link
                     href={
                       "https://app.uniswap.org/explore/tokens/base0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6"
                     }
-                    className="bg-red py-3 px-4 rounded-xl text-black font-futura text-center font-bold"
+                    className="bg-red py-3 px-4 rounded-xl text-black font-futura text-center font-bold transaction-all duration-300 hover:scale-105 focus:scale-105"
                   >
                     AKUMA
                   </Link>
                   <Link
-                    href={"https://opensea.io/collection/probably-nothing-genesis-nft"}
+                    href={
+                      "https://opensea.io/collection/probably-nothing-genesis-nft"
+                    }
                     target="_blank"
-                    className="bg-red py-3 px-4 rounded-xl text-black font-futura text-center font-bold"
+                    className="bg-red py-3 px-4 rounded-xl text-black font-futura text-center font-bold transaction-all duration-300 hover:scale-105 focus:scale-105"
                   >
                     Probably GNFT
                   </Link>

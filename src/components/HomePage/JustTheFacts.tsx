@@ -52,7 +52,7 @@ export const JustTheFacts = () => {
             <strong>Contract Address:</strong>
             <button
               onClick={handleCopy}
-              className="break-all hover:text-orange-300"
+              className="break-all transaction-all duration-300 hover:text-orange-300 focus:text-orange-300"
             >
               &nbsp;0x2f20cf3466f80a5f7f532fca553c8cbc9727fef6
             </button>

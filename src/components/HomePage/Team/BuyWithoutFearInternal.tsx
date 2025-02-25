@@ -19,14 +19,14 @@ export const BuyWithoutFearInternal = () => {
         <Link
           target="_blank"
           href={"https://link.aarc.xyz/akuma"}
-          className="bg-red py-3 px-4 rounded-xl text-black font-futura text-center font-bold"
+          className="bg-red py-3 px-4 rounded-xl text-black font-futura text-center font-bold transaction-all duration-300 hover:scale-105 focus:scale-105"
         >
           fiat
         </Link>
         <Link
           href={uniswapURL}
           target="_blank"
-          className="bg-red py-3 px-4 rounded-xl text-black font-futura text-center font-bold"
+          className="bg-red py-3 px-4 rounded-xl text-black font-futura text-center font-bold transaction-all duration-300 hover:scale-105 focus:scale-105"
         >
           crypto
         </Link>
