@@ -34,7 +34,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsModalOpen(true);
-    }, 2000); // Show modal after 3 seconds
+    }, 7000); // Show modal after 3 seconds
 
     return () => clearTimeout(timer); // Cleanup
   }, []);
