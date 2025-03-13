@@ -2,8 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
-import { X } from "lucide-react";
+import Modal from "@/components/Modal";
 // import { Tweet } from "react-tweet";
 import {
   Carousel,
@@ -171,11 +170,13 @@ const sounds = [
 
 export const SpreadTheLove = () => {
   // State to store the URL of the selected track
-  const [currentTrack, setCurrentTrack] = useState<string | null>(null);
+  const [currentSoundUrl, setCurrentSoundUrl] = useState<string>('');
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Handle click event on images
   const handleImageClick = (url: string) => {
-    setCurrentTrack(url); // Set the SoundCloud URL for the clicked image
+    setCurrentSoundUrl(url); // Set the SoundCloud URL for the clicked image
+    setIsModalOpen(true);
   };
 
   return (
@@ -505,24 +506,9 @@ export const SpreadTheLove = () => {
                 <CarouselNext /> */}
               </Carousel>
             </div>
-            {currentTrack && (
-              <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                <motion.div
-                  initial={{ opacity: 0, y: -50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -50 }}
-                  className="bg-white p-2 rounded-2xl shadow-xl max-w-md w-full"
-                >
-                  <div className="flex justify-between items-center mb-4">
-                    <h2 className="text-xl font-semibold">Modal Title</h2>
-                    <button onClick={() => setCurrentTrack(null)}>
-                      <X className="w-6 h-6 text-gray-600 hover:text-black" />
-                    </button>
-                  </div>
-                  {currentTrack && <SoundCloudPlayer url={currentTrack} />}
-                </motion.div>
-              </div>
-            )}
+            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} maxWidth={600}>
+              <SoundCloudPlayer url={currentSoundUrl} />
+            </Modal>
           </div>
         </div>
       </div>

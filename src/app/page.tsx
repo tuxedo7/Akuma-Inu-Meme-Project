@@ -1,5 +1,7 @@
 // import Image from "next/image";
-
+"use client";
+import { useState, useEffect } from "react";
+import Modal from "@/components/Modal";
 // import { About } from "@/components/HomePage/About";
 // import { AkumaProducts } from "@/components/HomePage/AkumaProducts";
 // import { BuildingBounties } from "@/components/HomePage/BuildingBounties";
@@ -27,6 +29,16 @@ import { Footer } from "@/components/Layout/Footer";
 import Image from "next/image";
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsModalOpen(true);
+    }, 2000); // Show modal after 3 seconds
+
+    return () => clearTimeout(timer); // Cleanup
+  }, []);
+
   return (
     <>
       <div className="relative">
@@ -68,6 +80,17 @@ export default function Home() {
       <WeBuiltAnArmy />
       <BuildingBounties />
       <JoinCabal /> */}
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} maxWidth={480}>
+        <iframe
+          src="https://embeds.beehiiv.com/33b31df6-1cd0-4bf1-a44d-22cf967cccb4"
+          data-test-id="beehiiv-embed"
+          width="100%"
+          height="320"
+          frameBorder="no"
+          scrolling="no"
+          className="rounded-md border-2 border-gray-300 m-0 bg-transparent"
+        ></iframe>
+      </Modal>
     </>
   );
 }
