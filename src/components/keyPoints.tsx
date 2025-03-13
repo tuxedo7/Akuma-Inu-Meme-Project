@@ -1,5 +1,5 @@
 import React from "react";
 
-export const keyPoints = () => {
-  return <div>keyPoints</div>;
+export const KeyPoints = () => {
+  return <div>KeyPoints</div>;
 };
