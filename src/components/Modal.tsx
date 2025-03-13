@@ -23,7 +23,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, maxWidth }) =>
       >
         <button
           onClick={onClose}
-          className="absolute top-[-30] right-0 sm:right-[-30]"
+          className="absolute top-[-30px] right-0 sm:right-[-30px]"
         >
           {/* ✖ */}
           <X className="w-6 h-6 text-white border-2 border-white transaction-all duration-300 hover:scale-[1.2] focus:scale-[1.2] rounded-full" />
