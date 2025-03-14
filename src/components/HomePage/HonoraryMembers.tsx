@@ -11,7 +11,7 @@ export const HonoraryMembers = () => {
           {/* left side of grid */}
           <div className="font-medium order-2 md:order-[unset] text-lg">
             <p className="text-[48px] text-center md:text-left md:text-[64px] font-vallejo leading-[1]">
-              <span className="text-red">HONORARY</span> MEMEBERS
+              <span className="text-red">HONORARY</span> MEMBERS
             </p>
             <div className="text-center md:text-left">
               <p className="mt-10 leading-[1.4]">{`Join the most powerful cabal in crypto

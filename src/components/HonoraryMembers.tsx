@@ -8,7 +8,7 @@ export const HonoraryMembers = () => {
     <div id="community" className="relative">
       <div className="relative z-10 container py-6 md:py-8">
         <p className="text-[60px] sm:text-[100px] md:text-[120px] font-vallejo text-red text-center md:text-left">
-          HONORARY MEMEBERS OF THE ROYAL AKUMANATI
+          HONORARY MEMBERS OF THE ROYAL AKUMANATI
         </p>
         <div className="text-[24px] md:text-[32px] font-raleway font-bold mt-5 md:mt-8 text-center md:text-left leading-[1.4]">
           <p>Join the most powerful cabal in crypto</p>
